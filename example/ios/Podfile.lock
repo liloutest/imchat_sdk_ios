@@ -1,0 +1,28 @@
+PODS:
+  - Flutter (1.0.0)
+  - imchat_sdk_ios (0.0.1):
+    - Flutter
+  - integration_test (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - imchat_sdk_ios (from `.symlinks/plugins/imchat_sdk_ios/ios`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  imchat_sdk_ios:
+    :path: ".symlinks/plugins/imchat_sdk_ios/ios"
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  imchat_sdk_ios: e6e1434ee32010e06e2d0693e85839937c85ea88
+  integration_test: ce0a3ffa1de96d1a89ca0ac26fca7ea18a749ef4
+
+PODFILE CHECKSUM: 6e700dec67e6deac9b1c69bb14c49a2217a12d15
+
+COCOAPODS: 1.13.0
