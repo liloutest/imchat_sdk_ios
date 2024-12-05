@@ -42,10 +42,19 @@ s.preserve_paths = [
 s.vendored_frameworks = 'Framework/imchat.framework'
   # Flutter.framework does not contain a i386 slice.
 
-s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' ,
+s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+  'VALID_ARCHS[sdk=iphoneos*]' => 'arm64',
+  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+  'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'x86_64' ,
 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
 'CLANG_ENABLE_MODULES' => 'YES',
-'OTHER_LDFLAGS' => '$(inherited) -framework "imchat" -ObjC -all_load'
+'OTHER_LDFLAGS' => '$(inherited) -framework "imchat" -ObjC -all_load',
+'ONLY_ACTIVE_ARCH' => 'NO'
+}
+
+s.user_target_xcconfig = {
+  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+  'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
 }
 
 
