@@ -1,14 +1,90 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
   - Flutter (1.0.0)
+  - FMDB (2.7.12):
+    - FMDB/standard (= 2.7.12)
+  - FMDB/Core (2.7.12)
+  - FMDB/SQLCipher (2.7.12):
+    - FMDB/Core
+    - SQLCipher (~> 4.6)
+  - FMDB/standard (2.7.12):
+    - FMDB/Core
   - imchat_sdk_ios (0.0.1):
+    - AFNetworking (= 4.0.1)
     - Flutter
+    - FMDB/SQLCipher
+    - IQKeyboardManager
+    - LKDBHelper
+    - Masonry
+    - MJRefresh
+    - Protobuf (~> 3.19)
+    - SDWebImage
+    - SocketRocket
+    - SVProgressHUD
+    - TTTAttributedLabel
+    - TZImagePickerController/Basic
+    - YYModel
   - integration_test (0.0.1):
     - Flutter
+  - IQKeyboardManager (6.5.19)
+  - LKDBHelper (2.6.6):
+    - LKDBHelper/standard (= 2.6.6)
+  - LKDBHelper/standard (2.6.6):
+    - FMDB
+  - Masonry (1.1.0)
+  - MJRefresh (3.7.9)
+  - Protobuf (3.29.0)
+  - SDWebImage (5.20.0):
+    - SDWebImage/Core (= 5.20.0)
+  - SDWebImage/Core (5.20.0)
+  - SocketRocket (0.7.1)
+  - SQLCipher (4.6.1):
+    - SQLCipher/standard (= 4.6.1)
+  - SQLCipher/common (4.6.1)
+  - SQLCipher/standard (4.6.1):
+    - SQLCipher/common
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
+  - TTTAttributedLabel (2.0.0)
+  - TZImagePickerController/Basic (3.8.8)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - imchat_sdk_ios (from `.symlinks/plugins/imchat_sdk_ios/ios`)
   - integration_test (from `.symlinks/plugins/integration_test/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - FMDB
+    - IQKeyboardManager
+    - LKDBHelper
+    - Masonry
+    - MJRefresh
+    - Protobuf
+    - SDWebImage
+    - SocketRocket
+    - SQLCipher
+    - SVProgressHUD
+    - TTTAttributedLabel
+    - TZImagePickerController
+    - YYModel
 
 EXTERNAL SOURCES:
   Flutter:
@@ -19,10 +95,24 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/integration_test/ios"
 
 SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  imchat_sdk_ios: e6e1434ee32010e06e2d0693e85839937c85ea88
+  FMDB: 728731dd336af3936ce00f91d9d8495f5718a0e6
+  imchat_sdk_ios: 03a90745306fd2faf15bf207efc4640415f72ccb
   integration_test: ce0a3ffa1de96d1a89ca0ac26fca7ea18a749ef4
+  IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
+  LKDBHelper: c57fb4f82051b7d16b934d5cbe86f1539eb06a7f
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
+  Protobuf: 4bd991351f557a31f4fadd3ce1cdab236ccb9ea5
+  SDWebImage: 73c6079366fea25fa4bb9640d5fb58f0893facd8
+  SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
+  SQLCipher: 77fbe633cd84db04b07876dd50766b4924b57d61
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  TZImagePickerController: d084a7b97c82d387e7669dd86dc9a9057500aacf
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 6e700dec67e6deac9b1c69bb14c49a2217a12d15
+PODFILE CHECKSUM: 33a8265427a61a61692e8cfb16b6cd178a7154b1
 
 COCOAPODS: 1.13.0
